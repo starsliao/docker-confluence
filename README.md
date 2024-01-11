@@ -3,6 +3,8 @@
 > Confluence是一个专业的企业知识管理与协同软件，也可以用于构建企业wiki。使用简单，但它强大的编辑和站点管理特征能够帮助团队成员之间共享信息、文档协作、集体讨论，信息推送
 
 ## 数据库设置
+mysql8连接池配置:
+jdbc:mysql://localhost:3306/confluence?sessionVariables=transaction_isolation='READ-COMMITTED'
 
 不建议将数据库部署在Docker容器，推荐使用云数据库或者物理机数据库。
 
